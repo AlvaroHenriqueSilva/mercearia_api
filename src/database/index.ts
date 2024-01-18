@@ -1,6 +1,14 @@
 import { Sequelize } from "sequelize";
 
-export const connection = new Sequelize('mercearia', 'root', '', {
+const connection = new Sequelize('mercearia', 'root', '', {
     dialect: 'mysql',
     host: 'localhost'
 })
+
+try {
+    connection.authenticate()
+} catch (error) {
+    console.log(error)
+}
+
+export default connection

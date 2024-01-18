@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import { connection } from '../../database'
+import connection from '../../database'
 
 
 const Product = connection.define('Product', {
@@ -22,6 +22,7 @@ const Product = connection.define('Product', {
         allowNull: false
     }
 })
+
 
 
 export default Product;
