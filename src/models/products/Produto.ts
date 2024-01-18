@@ -24,5 +24,4 @@ const Product = connection.define('Product', {
 })
 
 
-
 export default Product;
