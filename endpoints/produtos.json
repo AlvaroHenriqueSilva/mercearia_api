@@ -1,0 +1,116 @@
+{
+    "info": {
+        "_postman_id": "855fe6c1-a5c0-4812-91e7-be582f568995",
+        "name": "Products",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Create Products",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/products",
+                    "path": [
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \n  \"descricao\": \"Tudo o que seu pé precisa\",\n  \"preco_unitario\": 14\n}"
+                }
+            }
+        },
+        {
+            "name": "List All Products",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/products",
+                    "path": [
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "Update Product",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:3000/products/2",
+                    "path": [
+                        "products",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"descricao\": \"Nova pasta de dente\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Delete Product",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:3000/products/1",
+                    "path": [
+                        "products",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "List One Product",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/products/4",
+                    "path": [
+                        "products",
+                        "4"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        }
+    ]
+}

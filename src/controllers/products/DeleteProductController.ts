@@ -3,7 +3,7 @@ import { DeleteProductService } from "../../services/products/DeleteProductServi
 
 const DeleteProductController = async (req: Request, res: Response) => {
 
-    const { id_produto } = req.body
+    const id_produto = +req.params.id
     const product = await DeleteProductService({ id_produto })
     return res.json(product)
 }
