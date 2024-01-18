@@ -1,4 +1,4 @@
-import Product from "../../models/products/Produto";
+import Produto from "../../models/Produto";
 
 interface Product {
     nome_produto: string;
@@ -11,6 +11,6 @@ export const CreateProductService = async ({nome_produto, descricao, preco_unita
     if (!descricao) return { error: 'Descrição é requerido!' }
     if (!preco_unitario) { error: 'Preco é requerido!' }
 
-    const product = await Product.create({ nome_produto, descricao, preco_unitario })
+    const product = await Produto.create({ nome_produto, descricao, preco_unitario })
     return product;
 }

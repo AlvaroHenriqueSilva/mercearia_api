@@ -2,9 +2,13 @@ import express, { urlencoded, json} from 'express';
 import connection from './database'
 
 // Models
-import Product from './models/products/Produto';
+// =======
+import Produto from './models/Produto';
+import EntradaEstoque from './models/EntradaEstoque';
+
 
 // Rotas
+// ======
 import products from './routes/products';
 
 const app = express()

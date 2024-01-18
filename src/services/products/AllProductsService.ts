@@ -1,7 +1,7 @@
-import Product from "../../models/products/Produto";
+import Produto from "../../models/Produto";
 
 export const AllProductsService = async () => {
 
-    const product = await Product.findAll({ raw: true });
+    const product = await Produto.findAll({ raw: true });
     return product;
 }

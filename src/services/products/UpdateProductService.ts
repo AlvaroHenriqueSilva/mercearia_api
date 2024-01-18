@@ -1,4 +1,4 @@
-import Product from "../../models/products/Produto";
+import Produto from "../../models/Produto";
 
 interface Product {
     id_produto: number,
@@ -14,7 +14,7 @@ export const UpdateProductService = async ({
 }: Product) => {
 
     if (!id_produto) return { error: 'Id produto é requerido!' }
-    const product = await Product.update({ id_produto, nome_produto, descricao, preco_unitario }, {
+    const product = await Produto.update({ id_produto, nome_produto, descricao, preco_unitario }, {
 
         where: {
             id_produto
