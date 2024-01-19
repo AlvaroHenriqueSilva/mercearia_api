@@ -7,6 +7,7 @@ import Produto from './models/Produto';
 import EntradaEstoque from './models/EntradaEstoque';
 import SaidaEstoque from './models/SaidaEstoque';
 
+
 // Rotas
 // ======
 import products from './routes/products';
