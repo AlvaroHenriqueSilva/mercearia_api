@@ -12,6 +12,7 @@ import SaidaEstoque from './models/SaidaEstoque';
 // ======
 import products from './routes/products';
 import entrys from './routes/entrys'
+import outs from './routes/outs'
 
 const app = express()
 
@@ -20,6 +21,7 @@ app.use(json())
 
 app.use(products)
 app.use(entrys)
+app.use(outs)
 
 connection.sync()
           .then(() => app.listen(3000, () => console.log('Server is listening!')))
