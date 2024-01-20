@@ -7,7 +7,7 @@ const UpdateProductController = async (req: Request, res: Response) => {
     const { nome_produto, descricao, preco_unitario } = req.body
 
     const product = await UpdateProductService({ id_produto, nome_produto, descricao, preco_unitario })
-    return res.json(product)
+    return res.json({ message: 'Produto editado com sucesso!' })
 }
 
 export default UpdateProductController;

@@ -5,7 +5,7 @@ const CreateProductController = async (req: Request, res: Response) => {
 
     const { nome_produto, descricao, preco_unitario } = req.body
     const product = await CreateProductService({ nome_produto, descricao, preco_unitario })
-    return res.json(product) 
+    return res.json({ message: 'Produto criado com sucesso!' })
 }
 
 export default CreateProductController;

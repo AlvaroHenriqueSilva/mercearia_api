@@ -5,7 +5,7 @@ const CreateOutController = async (req: Request, res: Response) => {
     const id_produto = +req.params.id
     const { quantidade } = req.body
     const outs = await CreateOutService({ id_produto, quantidade })
-    return res.json(outs)
+    return res.json({ message: 'Saida feita com sucesso!' })
 }
 
 export default CreateOutController;
