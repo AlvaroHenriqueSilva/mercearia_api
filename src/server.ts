@@ -6,7 +6,9 @@ import connection from './database'
 import Produto from './models/Produto';
 import EntradaEstoque from './models/EntradaEstoque';
 import SaidaEstoque from './models/SaidaEstoque';
+import Usuario from './models/Usuario';
 
+Usuario.sync()
 
 // Rotas
 // ======
