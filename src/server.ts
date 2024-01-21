@@ -10,6 +10,7 @@ import Usuario from './models/Usuario';
 
 // Rotas
 // ======
+import users from './routes/users'
 import products from './routes/products';
 import entrys from './routes/entrys'
 import outs from './routes/outs'
@@ -19,6 +20,7 @@ const app = express()
 app.use(urlencoded({ extended: true }))
 app.use(json())
 
+app.use(users)
 app.use(products)
 app.use(entrys)
 app.use(outs)

@@ -2,19 +2,17 @@ import { hashSync } from "bcryptjs";
 import Usuario from "../../models/Usuario";
 
 interface User {
-    name: string,
+    nome: string,
     email: string,
     password: string,
   
 }
 
-export const CreateUserService = async ({ name, email, password }: User) => {
+export const CreateUserService = async ({ nome, email, password }: User) => {
    
     const passwordHash = hashSync(password, 8)
 
-    const user = await Usuario.create({
-        data: { name, email, password: passwordHash}
-    })
+    const user = await Usuario.create({ nome, email, password: passwordHash})
 
     return user
 

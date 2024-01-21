@@ -3,8 +3,8 @@ import { CreateUserService } from "../../services/users/CreateUserService";
 
 
 const CreateUserController = async (req: Request, res: Response) => {
-    const { name, email, password } = req.body
-    await CreateUserService({ name, email, password })
+    const { nome, email, password } = req.body
+    await CreateUserService({ nome, email, password })
     return res.json({ message: 'Usuário criado com sucesso!' })
 }
 
