@@ -9,7 +9,43 @@ module.exports = {
       preco_unitario: 10,
       createdAt: new Date(),
       updatedAt: new Date()
-    }]);
+    },
+    {
+      nome_produto: 'Farinha de trigo',
+      descricao: 'Farainha para bolos',
+      preco_unitario: 10,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      nome_produto: 'Farinha de trigo',
+      descricao: 'Farainha para bolos',
+      preco_unitario: 10,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      nome_produto: 'Farinha de trigo',
+      descricao: 'Farainha para bolos',
+      preco_unitario: 10,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      nome_produto: 'Farinha de trigo',
+      descricao: 'Farainha para bolos',
+      preco_unitario: 10,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      nome_produto: 'Farinha de trigo',
+      descricao: 'Farainha para bolos',
+      preco_unitario: 10,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+  ]);
   },
 
   async down (queryInterface, Sequelize) {

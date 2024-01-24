@@ -8,6 +8,8 @@ import EntradaEstoque from './models/EntradaEstoque';
 import SaidaEstoque from './models/SaidaEstoque';
 import Usuario from './models/Usuario';
 
+Produto.sync({ force: true }) 
+
 // Rotas
 // ======
 import users from './routes/users'

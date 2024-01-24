@@ -18,7 +18,7 @@ const Produto = connection.define('Produto', {
         allowNull: false
     },
     preco_unitario: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DECIMAL(10, 2),
         allowNull: false
     }
 })
