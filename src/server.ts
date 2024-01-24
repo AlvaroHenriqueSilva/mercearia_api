@@ -8,6 +8,7 @@ import EntradaEstoque from './models/EntradaEstoque';
 import SaidaEstoque from './models/SaidaEstoque';
 import Usuario from './models/Usuario';
 
+Usuario.sync({ force: true })
 
 // Rotas
 // ======

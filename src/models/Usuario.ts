@@ -1,5 +1,6 @@
-import { DataTypes, Model } from 'sequelize';
+import { DataTypes } from 'sequelize';
 import connection from '../database'
+import Produto from './Produto';
 
 
 const Usuario = connection.define('Usuario', {
@@ -23,5 +24,10 @@ const Usuario = connection.define('Usuario', {
     }
 })
 
+Usuario.hasMany(Produto, {
+    foreignKey: {
+        name: 'id_usuario'
+    }
+})
 
 export default Usuario;
