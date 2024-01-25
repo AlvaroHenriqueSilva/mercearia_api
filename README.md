@@ -4,10 +4,13 @@ Este projeto foi desenvolvido para colocar em prática os conhecimentos adquirid
 
 💻 A API permite criar novos usuários e fazer login gerando um token (JWT), que será utilizado nas rotas de produtos para verificar a autenticação e salvar no banco qual usuário criou um novo produto na mercearia.
 
-## Tecnologias
+## 🛠️ Tecnologias
 <p align="center">
-  <img align="center" height="30" width="50" alt="html-icon" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg">
+  <img align="center" height="30" width="50" alt="html-icon" src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg">
   <img align="center" height="30" width="50" alt="html-icon" src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg">
+
+  <img align="center" height="30" width="50" alt="html-icon" src="https://github.com/devicons/devicon/blob/master/icons/express/express-original.svg">
+  <img align="center" height="30" width="50" alt="html-icon" src="https://github.com/devicons/devicon/blob/master/icons/sequelize/sequelize-original.svg">
   
   <img align="center" height="30" width="50" alt="html-icon" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg">
 </p>
