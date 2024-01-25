@@ -1,15 +1,11 @@
 import express, { urlencoded, json} from 'express';
 import connection from './database'
 
-// Models
-// =======
 import Produto from './models/Produto';
 import EntradaEstoque from './models/EntradaEstoque';
 import SaidaEstoque from './models/SaidaEstoque';
 import Usuario from './models/Usuario';
 
-// Rotas
-// ======
 import users from './routes/users'
 import products from './routes/products';
 import entrys from './routes/entrys'
