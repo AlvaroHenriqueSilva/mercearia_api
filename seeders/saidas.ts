@@ -3,73 +3,73 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('entradas_estoques', [
+    return queryInterface.bulkInsert('saidas_estoques', [
       {
-        quantidade: 25,
-        data_entrada: new Date(),
+        quantidade: 5,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 1
       },
       {
-        quantidade: 50,
-        data_entrada: new Date(),
+        quantidade: 10,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 2
       },
       {
-        quantidade: 40,
-        data_entrada: new Date(),
+        quantidade: 10,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 3
       },
       {
-        quantidade: 50,
-        data_entrada: new Date(),
+        quantidade: 15,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 4
       },
       {
-        quantidade: 60,
-        data_entrada: new Date(),
+        quantidade: 20,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 5
       },
       {
-        quantidade: 80,
-        data_entrada: new Date(),
+        quantidade: 40,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 6
       },
       {
-        quantidade: 100,
-        data_entrada: new Date(),
+        quantidade: 50,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 7
       },
       {
-        quantidade: 80,
-        data_entrada: new Date(),
+        quantidade: 70,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 8
       },
       {
-        quantidade: 90,
-        data_entrada: new Date(),
+        quantidade: 50,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 9
       },
       {
-        quantidade: 150,
-        data_entrada: new Date(),
+        quantidade: 35,
+        data_saida: new Date(),
         createdAt: new Date(),
         updatedAt: new Date(),
         id_produto: 10
@@ -78,6 +78,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('entradas_estoques', null, {});
+    return queryInterface.bulkDelete('saidas_estoques', null, {});
   }
 };
