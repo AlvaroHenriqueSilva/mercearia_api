@@ -19,16 +19,18 @@ export interface UsuarioAttributes {
 }
 
 export const AuthUserService = async ({ email, password }: User) => {
+    if (!email) return { error: 'Email/password incorretos!'  }
+    if (!password) return { error: 'Email/password incorretos!'  }
 
     const user: UsuarioAttributes | any = await Usuario.findOne({
         where: { email: email },
         raw: true
     })
 
-    if (!user) return { messageError: 'Email/password incorretos!' }
+    if (!user) return { error: 'Email/password incorretos!' }
 
     const passwordMatch = compareSync(password, user.password) 
-    if (!passwordMatch) return { messageError: 'Email/password incorretos!' }
+    if (!passwordMatch) return { error: 'Email/password incorretos!' }
    
     
     const token = sign({ name: user.nome, email: user.email }, process.env.JWT_SECRET, {

@@ -9,6 +9,9 @@ interface User {
 }
 
 export const CreateUserService = async ({ nome, email, password }: User) => {
+    if (!nome) return { error: 'Nome é requerido!' }
+    if (!email) return { error: 'Email é requerido!' }
+    if (!password) return { error: 'Password é requerido!' }
    
     const passwordHash = hashSync(password, 8)
     const user = await Usuario.create({ nome, email, password: passwordHash})
