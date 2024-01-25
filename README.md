@@ -36,9 +36,9 @@ npm start
 ```bash
 npm run seed
 ````
-<p align="center">
-  ## Endpoints da API
-</p>
+
+# Endpoints da API
+
 ## Usuários
 
 ### `POST /users`
