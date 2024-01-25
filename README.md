@@ -1,10 +1,19 @@
-# REST API Mercearia
+# 🏆 REST API Mercearia
 
-Este projeto foi desenvolvido para colocar em prática o conhecimento adiquirido em NodeJs e Express. Essa API foi criada usando TypeScript junto o Sequelize para manipulação dos dados no banco de dados.
+Este projeto foi desenvolvido para colocar em prática os conhecimentos adquiridos em NodeJs e Express. Essa API foi criada usando TypeScript junto com o Sequelize para manipulação dos dados no banco de dados.
 
-A API permite criar novos usuários e fazer login gerando um token (JWT), que será utilizado nas rotas de produtos para verificar a autenticação e salvar no banco qual usuário criou um novo produto na mercearia.
+💻 A API permite criar novos usuários e fazer login gerando um token (JWT), que será utilizado nas rotas de produtos para verificar a autenticação e salvar no banco qual usuário criou um novo produto na mercearia.
 
-## Clonar o repositório
+## Tecnologias
+<p align="center">
+  <img align="center" height="30" width="50" alt="html-icon" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg">
+  <img align="center" height="30" width="50" alt="html-icon" src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg">
+  
+  <img align="center" height="30" width="50" alt="html-icon" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg">
+</p>
+
+
+## 🏁 Clonar o repositório
 ```bash
 git clone https://github.com/AlvaroHenriqueSilva/mercearia_api.git
 ````
