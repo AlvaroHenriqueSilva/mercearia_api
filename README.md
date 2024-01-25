@@ -14,14 +14,14 @@ npm start
 ````
 ## Endpoints
 
+### Produtos
+
 ### `GET /products`
 
 - Nenhum parâmetro necessário.
 
 
-<span style="font-size: 25px">
-    <span style="color: green">GET</span>  /products/:id
-</span>
+### `GET /products/:id`
 
 - `:id` (id do produto): ID único do produto.
 
@@ -36,3 +36,15 @@ npm start
 ### `DELETE /products/:id`
 
 - `:id` (id do produto): Exclui um produto.
+
+### Entradas estoque
+
+### `POST /products/entrys/:id`
+
+- `:id` (id do produto): Criar um nova entrada para o produto.
+
+### Saidas estoque
+
+### `POST /products/outs/:id`
+
+-`:id` (id do produto):  Criar um nova saida para o produto.
