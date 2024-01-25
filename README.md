@@ -31,6 +31,13 @@ npm install
 npm start
 ````
 
+## Gerar as seeds 
+#### Pare o servidor e no terminal rode
+```bash
+npm run seed
+````
+
+
 ## Usuários
 
 ### `POST /users`
