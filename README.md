@@ -19,7 +19,9 @@ npm start
 - Nenhum parâmetro necessário.
 
 
-### `GET /products/:id`
+<span style="font-size: 25px">
+    <span style="color: green">GET</span>  /products/:id
+</span>
 
 - `:id` (id do produto): ID único do produto.
 
