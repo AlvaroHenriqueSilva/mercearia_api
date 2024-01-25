@@ -32,11 +32,10 @@ npm start
 ````
 
 ## Gerar as seeds 
-#### Pare o servidor e no terminal rode
+#### Pare o servidor e no terminal e copie e cole o comando
 ```bash
 npm run seed
 ````
-
 
 ## Usuários
 
