@@ -25,6 +25,8 @@ git clone https://github.com/AlvaroHenriqueSilva/mercearia_api.git
 npm install
 ````
 ## Rodar o App
+#### Antes de rodar a API certifique-se de ter iniciado o MySql na sua máquina e de ter criado um Banco de dados com o nome de: mercearia
+
 ```bash
 npm start
 ````
