@@ -5,7 +5,7 @@ const auth = async (req: Request, res: Response, next: NextFunction) => {
 
     const authToken = req.headers.authorization;
 
-    if (!authToken) return res.status(401).end();
+    if (!authToken) return res.status(401).json({ message: 'Você precisa fazer login!' });
     const token = authToken.substring(7)
     
     try {

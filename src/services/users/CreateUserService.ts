@@ -11,7 +11,6 @@ interface User {
 export const CreateUserService = async ({ nome, email, password }: User) => {
    
     const passwordHash = hashSync(password, 8)
-
     const user = await Usuario.create({ nome, email, password: passwordHash})
 
     return user
