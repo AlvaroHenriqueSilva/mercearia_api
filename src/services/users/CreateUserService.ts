@@ -22,5 +22,4 @@ export const CreateUserService = async ({ nome, email, password }: User) => {
     const user = await Usuario.create({ nome, email, password: passwordHash})
 
     return user
-
 }
